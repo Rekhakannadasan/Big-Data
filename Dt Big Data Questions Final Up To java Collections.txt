@@ -1,0 +1,186 @@
+Conceptual and Explainatory Questions 
+_____________________________________________________________
+1. What is Object oriented Programming?
+2. What is access Specifier?
+3. What is the Static and why it is required?
+4. What is Array?
+5. What is Data Type?
+6  What is variable?
+7. What is operator and why it is required in programming?
+8. What is conditional constructs and why it is required in programming?
+9. What is difference between If--else if and switch case?
+10. What is Looping Constructs and why it is required in programming?
+11. What are the different phases of Looping?
+12. What is difference between While, do--while and for loop?
+13. What is Array?
+14. What Is Array In Java?
+15. What is function return type?
+16. What is the use of passing parameter inside the function?
+17. What is void and why it is used?
+18. What is use of String[] aa in main function?
+19. What is the difference between case condition of Java and C++?
+20. What is Exception Handling?
+21. Why do we require Exception Handling?
+22. How Exception Handling can be imlemented in the program/How to handle exception in program?
+23. What is constructor?
+24. What is the use of constructor?
+25. What is parameterized constructor
+26. What are the rules to be followed while using constructor?
+27. How do we us the base class constructor in child class?
+28. What will be the flow of consturctor execution while implementing inheritance?
+29. What is function overriding ? Why it is required? How it can be implemented in program?
+30. What is function Overloading? Why it is required? How it can be implemented in program?
+31. What is Inheritance and how it can be implemented in program? 
+32. How to inherit Class and how to inherit interfaces?
+33. What is interface and how it is different from Abstract class?
+34. What is framework on Java?
+35. What is Java Collections?
+36. What is collection Framework?
+37. What is ArrayList?
+38. What is Iterator?
+39. What are the characteristics of ArrayList?
+40. What are the advantage of using ArrayList?
+41. Application of ArrayList in Real life software?
+42. What is LinkedList?
+43. What is ListIterator?
+44. What are the characteristics of LikedList?
+45. What are the advantage of using LinkedList?
+46. Application of LinkedList in Real life software?
+47. What is the difference between LinkedList and ArrayList?
+48. What is generic Class?
+49. What are the benefits of Generic Class?
+50. Uses of Generic class in rela life scenario?
+51. What is HashSet?
+52. What is the difference between List and Set?
+53. What are the characteristics of HashSet?
+54. What are the advantage of using HashSet?
+55. Application of HashSet in Real life software?
+56. Why to Use constructor?
+57. How to use constructor?
+58. What is the difference between constructor and Normal Function in Java?
+59. What is Inheritance?
+60. How to implement Inheritance?
+61. What is the use of Access Spefier while using Inheritance?
+62. Why multiple inheritance is not supported in Java?
+63. How constructors behave wile implementing Inheritance? What is the use of this and super keywords in java?
+64. What is polymorphism? Benefits of polymrphism?
+65. How polymorphism is implemented?
+66. What is method Overloading? How it can be implemented? What are the rules to be followed while implementing method overloading?
+67. What is method Overriding? How it can be implemented? What are the rules to be followed while implementing method overriding?
+68. What is the use of Final Keyword?
+
+
+
+_________________________________________________________________________
+Programming Questions To be Solved
+________________________________________________________________________
+
+
+Qu 1. 
+
+Write a program in Java to accept the details of 10 Students. Display the total count of students who are eligible for taking admission in Graduation 1st Year if age is greater than 18.
+
+Details will be 
+
+studentName
+StudentAge
+__________________________
+
+Qu 2. 
+Write a program in Java to accept the details of 10 Employees.Display the total bonus given to the employees during festival season. Bonus Criteria is given below.
+
+if Salary is . 10000 Bonus will be 30%
+if Salary is . 50000 Bonus will be 20%
+if Salary is . 100000 Bonus will be 10%
+Details will be   : EmployeeName   : EmployeeSalary
+__________________________
+
+Qu 3. Write a program using array to accept 10 numbers and display the numbers in ascending order.
+
+__________________________
+
+Qu 4. Write a program to accept 10 number using array and display the sum and average of 10 numbers.
+
+__________________________
+Qu 5. Write a program to accept marks of 10 students using array and display the name of highest scorer.
+
+__________________________
+Qu 6. Write a java program to accept a number of any digit and reverse the numbers..
+
+Like :-   678345   --> 543876
+
+__________________________
+
+Qu 7. Write a menu driven program for calculator using Java Language. Menu Details are mentioned below :-
+
+	1. Addition
+	2. Substraction
+	3. Multiplication
+	4. Division
+	5. Percentage
+	6. Exit
+
+__________________________
+Qu 8. Write a Java Program to accept the Name and Salary of five employees using array variable and perform below task.
+
+	1. Display the name of employee who is getting paid highest
+	2. Display the name of employee who is getting paid Lowest
+	3. Display the Average Salary of Employees.
+	
+__________________________
+Qu 9. Write a Java Program to display matrix of 3 rows and 3 columns.
+
+__________________________
+
+Qu 10. Write a Java Program to add 2 matrices of 3 rows and 3 columns.
+
+__________________________
+Qu 11. Write a Java Program to do product of 2 matrices of 3 rows and 3 columns.
+
+__________________________
+
+
+Qu 12. Write a java program to maintain Employee Details using ArrayList? 
+
+Id
+Name
+Age
+Salary
+
+
+1. Add minimum 5 employee details.
+2. Display it in proper order.
+3. Display the name to employee having highest Salary
+4. Display the details in the order of Salary
+
+__________________________
+Qu 13. Write a program in java to eliminate duplicate key in hash map as user defined object?
+______________________________________________________________________
+
+Qu 14. Write a program in Java to create Generic Class to accept Employee Age and Salary?
+
+__________________________
+
+Qu 15. 
+Write a program in Java to perform all the operations related with HashMap. 
+	1. Store Employee Details by using Employee Class
+	2. Traverse Employee Details stored in Collection Object
+	3. Delete Employee Details
+	4. Update Employee Details
+
+
+__________________________
+Qu 16. 
+Write a Java Program to Accept Employee Details by Using TreeSet. Enter the data in any order but display the data by arranging as per EmployeeID using Comparator interface.
+1. Employee Name
+2. Employee ID
+3. Employee Age
+
+__________________________
+
+Qu 17. 
+Write program in java to create a base class name for accepting Studnet Details of Science Stream with common properties. After that create child classes of various Science Stream like (Maths, Biology, Computer, Electronics)
+
+After that also create the another child class (Software,Hardware),(Botany,Zoology) on class like Computer and Biology.
+
+__________________________

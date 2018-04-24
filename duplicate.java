@@ -1,3 +1,5 @@
+// Remove duplicates
+
 import java.util.*;
 class duplicate
 {
