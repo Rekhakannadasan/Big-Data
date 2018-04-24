@@ -1,0 +1,53 @@
+Find top ten buyers by using spark (use custs.txt and txns1.txt)
+----------------------------------------------------------------
+
+import spark.sqlContext.implicits._
+
+case class customer(id:Int, firstname:String,lastname:String,age:Int,profession:String) ; 
+
+
+val custRDD = sc.textFile("/home/hduser/custs.txt")
+
+val custmap = custRDD.map(_.split(","))
+
+val custsclass = custmap.map(v => customer(v(0).toInt,v(1).toString.trim,v(2).toString.trim,v(3).toInt,v(4).toString.trim))
+
+custsclass.foreach(println)
+
+
+val custDF = custsclass.toDF
+
+custDF.printSchema()
+
+custDF.registerTempTable("customer")
+
+
+
+case class sales(txnid:Int, txndate:String,custno:Int,amount:Double,category:String,product:String,city:String, state:String,spendby:String) ; 
+
+val txnRDD = sc.textFile("/home/hduser/txns1.txt")
+
+val txnmap = txnRDD.map(_.split(","))
+
+val txnclass = txnmap.map(v => sales(v(0).toInt,v(1).toString.trim,v(2).toInt,v(3).toDouble,v(4).toString.trim, v(5).toString.trim, v(6).toString.trim, v(7).toString.trim, v(8).toString.trim))
+
+val txnDF = txnclass.toDF
+
+txnDF.printSchema()
+
+
+txnDF.registerTempTable("sales")
+
+val query1 = spark.sql("select a.custno, b.firstname, b.lastname, b.age, b.profession, round(sum(a.amount),2) as total from sales a join customer b on a.custno = b.id group by a.custno, b.firstname, b.lastname, b.age, b.profession order by total desc limit 10")
+
+query1.show()
+
+query1.write.csv("/home/hduser/niit/spark1");
+
+
+
+
+
+
+
+
